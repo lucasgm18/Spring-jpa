@@ -4,13 +4,14 @@ package com.bookstore.jpa.models;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.persistence.*;
 
+import java.io.Serializable;
 import java.util.HashSet;
 import java.util.Set;
 import java.util.UUID;
 
 @Entity
 @Table(name = "TB_PUBLISHER")
-public class PublisherModel {
+public class PublisherModel implements Serializable {
     private static final long serialVersionUID = 1L;
 
     @Id
